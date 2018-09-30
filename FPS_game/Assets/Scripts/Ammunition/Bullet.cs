@@ -6,12 +6,6 @@ using UnityEngine;
 namespace FPS {
     public class Bullet : BaseAmmo
     {
-
-        [SerializeField]
-        private float _destroyTime = 2f;
-        [SerializeField]
-        private LayerMask _layerMask;
-
         private bool _isHitted;
         private float _speed;
 
@@ -22,6 +16,7 @@ namespace FPS {
 
         private void FixedUpdate()
         {
+            
             if (_isHitted)
                 return;
             Vector3 finalPos = transform.position + transform.forward * _speed * Time.fixedDeltaTime;
@@ -41,6 +36,7 @@ namespace FPS {
             else
             {
                 transform.position = finalPos;
+                Destroy(gameObject, _destroyTime);
             }
         }
     }

@@ -64,19 +64,26 @@
     <Compile Include="Assets\Compressed Gas Pistol\ReadMe.cs" />
     <Compile Include="Assets\Scripts\Ammunition\BaseAmmo.cs" />
     <Compile Include="Assets\Scripts\Ammunition\Bullet.cs" />
+    <Compile Include="Assets\Scripts\Ammunition\ShotgunBullet.cs" />
     <Compile Include="Assets\Scripts\BaseSceneObject.cs" />
     <Compile Include="Assets\Scripts\BaseWeapon.cs" />
     <Compile Include="Assets\Scripts\Controllers\BaseController.cs" />
     <Compile Include="Assets\Scripts\Controllers\FlashlightController.cs" />
     <Compile Include="Assets\Scripts\Controllers\InputController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\TeamMateController.cs" />
     <Compile Include="Assets\Scripts\Controllers\WeaponController.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IDamageable.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
     <Compile Include="Assets\Scripts\Models\BaseInteractableObjectModel.cs" />
     <Compile Include="Assets\Scripts\Models\FlashlightModel.cs" />
     <Compile Include="Assets\Scripts\Models\PlayerModel.cs" />
+    <Compile Include="Assets\Scripts\Models\TeamMateModel.cs" />
+    <Compile Include="Assets\Scripts\ShotGunFireWeapon.cs" />
     <Compile Include="Assets\Scripts\SingleFireWeapon.cs" />
+    <Compile Include="Assets\Scripts\Target.cs" />
     <Compile Include="Assets\Scripts\Views\FlashlightView.cs" />
+    <Compile Include="Assets\Scripts\Views\rotation.cs" />
+    <Compile Include="Assets\Scripts\Views\TeammateView.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>Q:/UnityProjects/GB_unitylevel2_FPS/FPS_game/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

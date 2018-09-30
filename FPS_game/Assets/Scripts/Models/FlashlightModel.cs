@@ -17,7 +17,7 @@ namespace FPS
         {
             get
             {
-                if (!_light) return false;
+                if (_light==null) return false;
                 return _light.enabled;
             }
         }

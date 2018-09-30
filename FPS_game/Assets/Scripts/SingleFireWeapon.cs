@@ -9,9 +9,12 @@ namespace FPS {
         private Transform _firepoint;
         public override void Fire()
         {
-            base.Fire();
-            BaseAmmo bullet = Instantiate(_ammoPrefab, _firepoint.position, _firepoint.rotation);
-            bullet.Initialize(_force);
+            if (!TryShoot()) return;
+            else
+            {
+                BaseAmmo bullet = Instantiate(_ammoPrefab, _firepoint.position, _firepoint.rotation);
+                bullet.Initialize(_force);
+            }
         } 
 
         public override void Reload()

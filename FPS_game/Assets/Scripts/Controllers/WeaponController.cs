@@ -6,8 +6,9 @@ namespace FPS
 {
     public class WeaponController : BaseController
     {
-        [SerializeField]
+
         private BaseWeapon[] _weapons;
+       
         private int _currentWeapon;
 
         private void Awake()
@@ -18,12 +19,20 @@ namespace FPS
                 _weapons[i].IsVisible = i == 0;
         }
 
-        public void ChangeWeapon()
+        public void ChangeWeapon(float scroll)
         {
             _weapons[_currentWeapon].IsVisible = false;
-            _currentWeapon++;
+            if (scroll > 0)
+                _currentWeapon++;
+            if (scroll < 0)
+                _currentWeapon--;
+             
+
             if (_currentWeapon >= _weapons.Length)
                 _currentWeapon = 0;
+            if (_currentWeapon < 0)
+                _currentWeapon = _weapons.Length-1;
+
             _weapons[_currentWeapon].IsVisible = true;
         }
 

@@ -11,11 +11,14 @@ namespace FPS
             if (Input.GetButtonDown("SwitchFlashlight"))
                 Main.Instance.FlashlightController.Switch();
 
-            if (Input.GetButtonDown("ChangeWeapon"))
-                Main.Instance.WeaponController.ChangeWeapon();
+            if (Input.GetAxis("Mouse ScrollWheel")!=0f)
+                Main.Instance.WeaponController.ChangeWeapon(Input.GetAxis("Mouse ScrollWheel"));
 
             if (Input.GetButton("Fire1"))
                 Main.Instance.WeaponController.Fire();
+            if (Input.GetButton("TeammateCommand"))
+                Main.Instance.TeamMateController.MoveCommand();
+
         }
     }
 
