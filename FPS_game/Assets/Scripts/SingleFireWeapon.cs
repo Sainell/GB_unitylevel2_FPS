@@ -13,6 +13,7 @@ namespace FPS {
             else
             {
                 BaseAmmo bullet = Instantiate(_ammoPrefab, _firepoint.position, _firepoint.rotation);
+                
                 bullet.Initialize(_force);
             }
         } 

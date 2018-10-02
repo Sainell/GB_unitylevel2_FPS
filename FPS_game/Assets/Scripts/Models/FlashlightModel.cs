@@ -12,7 +12,12 @@ namespace FPS
         private float ButteryMaxSize = 100;
         [SerializeField]
         private bool ButteryFlag = true;
-        
+
+
+        private void Awake()
+        {
+            _light = GetComponent<Light>();
+        }
         public bool IsOn
         {
             get
@@ -22,10 +27,7 @@ namespace FPS
             }
         }
 
-        private void Awake()
-        {
-            _light = GetComponent<Light>();
-        }
+        
 
         public void On()
         {

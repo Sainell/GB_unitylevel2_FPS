@@ -67,11 +67,15 @@
     <Compile Include="Assets\Scripts\Ammunition\ShotgunBullet.cs" />
     <Compile Include="Assets\Scripts\BaseSceneObject.cs" />
     <Compile Include="Assets\Scripts\BaseWeapon.cs" />
+    <Compile Include="Assets\Scripts\BotSpawner.cs" />
     <Compile Include="Assets\Scripts\Controllers\BaseController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\EnemyBotsController.cs" />
     <Compile Include="Assets\Scripts\Controllers\FlashlightController.cs" />
     <Compile Include="Assets\Scripts\Controllers\InputController.cs" />
     <Compile Include="Assets\Scripts\Controllers\TeamMateController.cs" />
     <Compile Include="Assets\Scripts\Controllers\WeaponController.cs" />
+    <Compile Include="Assets\Scripts\EnemyBot.cs" />
+    <Compile Include="Assets\Scripts\Firstaidkit.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IDamageable.cs" />
     <Compile Include="Assets\Scripts\Main.cs" />
     <Compile Include="Assets\Scripts\Models\BaseInteractableObjectModel.cs" />
@@ -84,6 +88,7 @@
     <Compile Include="Assets\Scripts\Views\FlashlightView.cs" />
     <Compile Include="Assets\Scripts\Views\rotation.cs" />
     <Compile Include="Assets\Scripts\Views\TeammateView.cs" />
+    <Compile Include="Assets\Scripts\WayPoint.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>Q:/UnityProjects/GB_unitylevel2_FPS/FPS_game/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

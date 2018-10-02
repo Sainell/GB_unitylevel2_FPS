@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 
 
@@ -19,8 +20,8 @@ namespace FPS
                for (int i = 0; i < 21; i++)
                 {
 
-                    BaseAmmo bullet = Instantiate(_ammoPrefabGun[i],_firepoint);
-                    
+                    BaseAmmo bullet = Instantiate(_ammoPrefabGun[i], _firepoint);
+                    bullet.transform.SetParent(null);
                     bullet.Initialize(_force);
                 }
             }
